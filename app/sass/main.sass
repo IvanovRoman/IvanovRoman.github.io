@@ -1,0 +1,86 @@
+/* Подключение переменных цветов */
+@import "colors"
+@import "reset"
+@import "fontello"
+ 
+html
+  font-size: 10px
+
+body
+  margin: 0
+  padding-top: 40px
+  background-color: $body-bg
+  color: $dark
+  font-family: 'Roboto', sans-serif
+  font-size: 14px
+a
+  text-decoration: none
+  color: $white
+
+.top-nav
+  .top-level-menu
+    margin-top: -30px
+    padding: 20px
+    background-color: #54a7d2
+  .inform-wrapper
+    margin: 30px 0
+  .main-menu
+    background-color: #333333
+    padding: 15px
+    .nav-menu
+      justify-content: center
+      list-style: none
+      padding: 0
+      display: flex
+      li
+        padding: 3px 15px
+        border-left: solid 1px $white
+        &:first-child
+          border: 0px
+        a
+          text-transform: uppercase
+          font-weight: 400
+          font-style: normal
+          font-size: 18px
+.hero-banner
+  position: relative
+  background: url('../img/bg/sewer-cleaning.jpg') left center no-repeat
+  background-size: cover
+  height: 400px
+  z-index: 1
+  &_content
+    background: #3a3e43
+    max-width: 430px
+    color: $white
+    position: absolute
+    top: 50%
+    left: 50%
+    width: 100%
+    transform: translate(-50%, -50%)
+    text-align: center
+    h3
+      font-size: 27px
+      margin-bottom: 0
+    h1
+      margin-bottom: 12px
+    h4
+      font-size: 18px
+.content
+  h2
+    text-align: center
+  .services
+    .organization-service
+      background-color: $white
+      margin-bottom: 30px
+      padding: 25px 30px
+      min-height: 32rem
+      transition: all 0.25s
+    img
+      display: block
+      margin: 0 auto
+      padding-top: 20px
+      max-width: 100%
+      height: auto
+
+
+@import "media"

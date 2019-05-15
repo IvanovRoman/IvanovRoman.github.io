@@ -1,0 +1,232 @@
+@charset "UTF-8";
+/* Подключение переменных цветов */
+/* Обозначим цвет фона свего сайта */
+.slick-active {
+  outline: none !important; }
+
+@font-face {
+  font-family: "fontello";
+  src: url("../fonts/fontello.eot?52815266");
+  src: url("../fonts/fontello.eot?52815266#iefix") format("embedded-opentype"), url("../fonts/fontello.woff2?52815266") format("woff2"), url("../fonts/fontello.woff?52815266") format("woff"), url("../fonts/fontello.ttf?52815266") format("truetype"), url("../fonts/fontello.svg?52815266#fontello") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+/* Chrome hack: SVG is rendered more smooth in Windozze. 100% magic, uncomment if you need it. */
+/* Note, that will break hinting! In other OS-es font will be not as sharp as it could be */
+/*
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: 'fontello';
+    src: url('../font/fontello.svg?52815266#fontello') format('svg');
+  }
+}
+*/
+[class^="icon-"]:before,
+[class*=" icon-"]:before {
+  font-family: "fontello";
+  font-style: normal;
+  font-weight: normal;
+  speak: none;
+  display: inline-block;
+  text-decoration: inherit;
+  width: 1em;
+  margin-right: 0.2em;
+  text-align: center;
+  /* opacity: .8; */
+  /* For safety - reset parent styles, that can break glyph codes*/
+  font-variant: normal;
+  text-transform: none;
+  /* fix buttons height, for twitter bootstrap */
+  line-height: 1em;
+  /* Animation center compensation - margins should be symmetric */
+  /* remove if not needed */
+  margin-left: 0.2em;
+  /* you can be more comfortable with increased icons size */
+  /* font-size: 120%; */
+  /* Font smoothing. That was taken from TWBS */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  /* Uncomment for 3D effect */
+  /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */ }
+
+.icon-facebook:before {
+  content: "\f09a"; }
+
+/* '' */
+.icon-menu:before {
+  content: "\f0c9"; }
+
+/* '' */
+.icon-instagram:before {
+  content: "\f16d"; }
+
+/* '' */
+.icon-vkontakte:before {
+  content: "\f189"; }
+
+/* '' */
+.icon-calendar-plus-o:before {
+  content: "\f271"; }
+
+/* '' */
+html {
+  font-size: 10px; }
+
+body {
+  margin: 0;
+  padding-top: 40px;
+  background-color: #e2eeff;
+  color: #131313;
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px; }
+
+a {
+  text-decoration: none;
+  color: #fff; }
+
+.top-nav .top-level-menu {
+  margin-top: -30px;
+  padding: 20px;
+  background-color: #54a7d2; }
+
+.top-nav .inform-wrapper {
+  margin: 30px 0; }
+
+.top-nav .main-menu {
+  background-color: #333333;
+  padding: 15px; }
+  .top-nav .main-menu .nav-menu {
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    list-style: none;
+    padding: 0;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex; }
+    .top-nav .main-menu .nav-menu li {
+      padding: 3px 15px;
+      border-left: solid 1px #fff; }
+      .top-nav .main-menu .nav-menu li:first-child {
+        border: 0px; }
+      .top-nav .main-menu .nav-menu li a {
+        text-transform: uppercase;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 18px; }
+
+.hero-banner {
+  position: relative;
+  background: url("../img/bg/sewer-cleaning.jpg") left center no-repeat;
+  -webkit-background-size: cover;
+          background-size: cover;
+  height: 400px;
+  z-index: 1; }
+  .hero-banner_content {
+    background: #3a3e43;
+    max-width: 430px;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    text-align: center; }
+    .hero-banner_content h3 {
+      font-size: 27px;
+      margin-bottom: 0; }
+    .hero-banner_content h1 {
+      margin-bottom: 12px; }
+    .hero-banner_content h4 {
+      font-size: 18px; }
+
+.content h2 {
+  text-align: center; }
+
+.content .services .organization-service {
+  background-color: #fff;
+  margin-bottom: 30px;
+  padding: 25px 30px;
+  min-height: 32rem;
+  -webkit-transition: all 0.25s;
+  -o-transition: all 0.25s;
+  transition: all 0.25s; }
+
+.content .services img {
+  display: block;
+  margin: 0 auto;
+  padding-top: 20px;
+  max-width: 100%;
+  height: auto; }
+
+@media (max-width: 767px) {
+  html {
+    font-size: 5px; }
+  .main-menu {
+    display: none; }
+  .top-nav_btn {
+    display: block; }
+  .top-nav_menu {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    display: none; }
+    .top-nav_menu__active {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      margin-bottom: 0; }
+    .top-nav_menu li {
+      line-height: 2; }
+      .top-nav_menu li a::after {
+        display: none; }
+  .left-sidebar_btn {
+    display: block; }
+  .left-sidebar_menu {
+    display: none; }
+    .left-sidebar_menu__active {
+      display: block; }
+  .copy {
+    text-align: center; }
+    .copy small {
+      display: block;
+      margin: 36px auto; }
+  .footer-contacts {
+    text-align: left; } }
+
+@media (min-width: 767px) and (max-width: 991px) {
+  html {
+    font-size: 5px; }
+  .top-nav_btn {
+    display: block; }
+  .top-nav_menu {
+    display: none; }
+    .top-nav_menu__active {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      margin-bottom: 0;
+      -webkit-justify-content: space-around;
+          -ms-flex-pack: distribute;
+              justify-content: space-around; }
+    .top-nav_menu li {
+      margin-right: 0;
+      line-height: 2; }
+      .top-nav_menu li a::after {
+        display: none; }
+  .left-sidebar_btn {
+    display: block; }
+  .left-sidebar_menu {
+    display: none; }
+    .left-sidebar_menu__active {
+      display: block; }
+  .footer-contacts {
+    text-align: left; } }
