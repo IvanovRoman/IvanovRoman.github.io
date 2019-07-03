@@ -3,41 +3,24 @@
 @media (max-width:767px)
   html
     font-size: 5px
-  .main-menu
-    display: none
   .top-nav
-    &_btn
-      display: block
-    &_menu
-      flex-direction: column
-      display: none
-      &__active
-        display: flex
-        margin-bottom: 0
-      li
-        line-height: 2
-        a
-          &::after
-            display: none
-  .left-sidebar
-    &_btn
-      display: block
-    &_menu
-      display: none
-      &__active
+    .main-menu
+      background-color: #333333
+      padding: 20px
+      .nav-btn
         display: block
-  .copy
-    text-align: center
-    small
-      display: block
-      margin: 36px auto
-  .footer
-    &-contacts
-      text-align: left
+      &_nav
+        display: none
+        flex-direction: column
+        &__active
+          display: flex
+          margin-bottom: 0
 
 @media (min-width: 767px) and (max-width:991px)
   html
     font-size: 5px
+  .nav-btn
+    display: none  
   .top-nav
     &_btn
       display: block
