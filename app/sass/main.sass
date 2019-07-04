@@ -110,11 +110,12 @@ a
       border-bottom: 5px solid darken($active-color, 10%)
       &:hover
         background-color: lighten($active-color, 2%)
-        transition: all 0.3s
-      
+        transition: all 0.3s 
 .content
-  h2
-    text-align: center
+  text-align: center
+  .header-services
+    margin-top: 20px
+    font-size: 30px
   .services
     .organization-service
       background-color: $white
@@ -129,12 +130,49 @@ a
       max-width: 100%
       height: auto
 .contacts
+  position: relative
+  background-color: $white
   h2
     text-align: center
+    font-size: 30px
+  &-form
+    padding: 20px
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    input
+      // display: block
+      padding: 10px
+      margin: 0 10px
+      margin-bottom: 10px
+      width: 260px
+      border: 1px solid rgba($dark, 0.6)
+      border-radius: 4px
+      font-size: 25px
+    small
+      margin-top: 10px
+      font-size: 14px
+      a
+        color: $active-color
+        &:hover
+        cursor: pointer
+  .btn
+    margin: 20px auto
+    padding: 15px 40px
+    display: block
+    text-decoration: none
+    color: $white
+    border-radius: 5px
+    font-size: 16px
+    font-weight: 700
+    &-primary
+      background-color: $active-color
+      border-bottom: 5px solid darken($active-color, 10%)
+      &:hover
+        background-color: lighten($active-color, 2%)
+        transition: all 0.3s
 .footer
     background-color: $footer-color
-    // vertical-align: middle
-    // margin: auto 0 auto 0
     a
       color: $dark
     ul

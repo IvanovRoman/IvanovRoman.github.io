@@ -199,27 +199,79 @@ a {
         -o-transition: all 0.3s;
         transition: all 0.3s; }
 
-.content h2 {
+.content {
   text-align: center; }
+  .content .header-services {
+    margin-top: 20px;
+    font-size: 30px; }
+  .content .services .organization-service {
+    background-color: #fff;
+    margin-bottom: 30px;
+    padding: 25px 30px;
+    min-height: 32rem;
+    -webkit-transition: all 0.25s;
+    -o-transition: all 0.25s;
+    transition: all 0.25s; }
+  .content .services img {
+    display: block;
+    margin: 0 auto;
+    padding-top: 20px;
+    max-width: 100%;
+    height: auto; }
 
-.content .services .organization-service {
-  background-color: #fff;
-  margin-bottom: 30px;
-  padding: 25px 30px;
-  min-height: 32rem;
-  -webkit-transition: all 0.25s;
-  -o-transition: all 0.25s;
-  transition: all 0.25s; }
-
-.content .services img {
-  display: block;
-  margin: 0 auto;
-  padding-top: 20px;
-  max-width: 100%;
-  height: auto; }
-
-.contacts h2 {
-  text-align: center; }
+.contacts {
+  position: relative;
+  background-color: #fff; }
+  .contacts h2 {
+    text-align: center;
+    font-size: 30px; }
+  .contacts-form {
+    padding: 20px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
+    .contacts-form input {
+      padding: 10px;
+      margin: 0 10px;
+      margin-bottom: 10px;
+      width: 260px;
+      border: 1px solid rgba(19, 19, 19, 0.6);
+      -webkit-border-radius: 4px;
+              border-radius: 4px;
+      font-size: 25px; }
+    .contacts-form small {
+      margin-top: 10px;
+      font-size: 14px; }
+      .contacts-form small a {
+        color: #009adf;
+        cursor: pointer; }
+  .contacts .btn {
+    margin: 20px auto;
+    padding: 15px 40px;
+    display: block;
+    text-decoration: none;
+    color: #fff;
+    -webkit-border-radius: 5px;
+            border-radius: 5px;
+    font-size: 16px;
+    font-weight: 700; }
+    .contacts .btn-primary {
+      background-color: #009adf;
+      border-bottom: 5px solid #0077ac; }
+      .contacts .btn-primary:hover {
+        background-color: #00a1e9;
+        -webkit-transition: all 0.3s;
+        -o-transition: all 0.3s;
+        transition: all 0.3s; }
 
 .footer {
   background-color: #a3afa4; }
