@@ -18,6 +18,8 @@ a
   color: $white
 
 .top-nav
+  margin-top: -35px
+  background-color: #00bcd43d
   .top-level-menu
     margin-top: -30px
     padding: 20px
@@ -123,6 +125,8 @@ a
       padding: 25px 30px
       min-height: 32rem
       transition: all 0.25s
+      .price
+        color: $price-color
     img
       display: block
       margin: 0 auto
@@ -135,17 +139,26 @@ a
   h2
     text-align: center
     font-size: 30px
+  &-recvisits
+    text-align: center
+    font-size: 23px
+    color: $recvisits
+    font-weight: 600
+    a
+      color: $recvisits
+  &-address
+    margin: 20px 25px
   &-form
     padding: 20px
     display: flex;
     align-items: center;
     justify-content: center;
     input
-      // display: block
+      display: block
+      width: 100%
+      max-width: 430px
       padding: 10px
-      margin: 0 10px
-      margin-bottom: 10px
-      width: 260px
+      margin: 15px 0px 10px 0px
       border: 1px solid rgba($dark, 0.6)
       border-radius: 4px
       font-size: 25px
@@ -166,7 +179,7 @@ a
     font-size: 16px
     font-weight: 700
     &-primary
-      background-color: $active-color
+      background-color: rgb(0, 161, 233)
       border-bottom: 5px solid darken($active-color, 10%)
       &:hover
         background-color: lighten($active-color, 2%)
@@ -189,7 +202,8 @@ a
             color: $footer-text
 .copy
   font-size: 20px
-  color: $dark
+  color: #342828
+  font-weight: bold
   vertical-align: middle
 .footer-contacts
   text-align: center
