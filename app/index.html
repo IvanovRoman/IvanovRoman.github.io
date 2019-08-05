@@ -3,13 +3,14 @@
   <head>
     <title>Устранение засор в Одинцово, Одинцовский район</title>
     <!-- Required meta tags -->
-    <!-- <base href="http://localhost:3000/"> -->
+    <base href="http://localhost:3000/">
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="«Срочная и плановая прочистка твердых и жидких отходов из канализационных систем">
     <meta name="keywords" content="прочистка канализации, прочистка труб, прочистка канализационных труб, прочистка труб в Одинцово, прочистка труб в Одинцовском районе,  прочистка канализации в Москве, прочистка канализации в Одинцово,  срочная прочистка канализации, плановая прочистка канализации, экстренная прочистка канализации, служба прочистки канализации">
     <meta property="og:url" content="http://xn----7sbctxb0apcsd.xn--p1ai">
+    <meta property="og:image" content="http://ia.media-imdb.com/images/rock.jpg" />
     <meta property="og:title" content="Устранение засоров | Очистка засоров в Одинцово">
     <meta property="og:description" content="Прочистим трубы в канализации, устраним засор, проведем видеоинспекцию">
     <meta property="og:type" content="website">
@@ -34,14 +35,14 @@
                  Москва Одинцовский район. Выезд машины от 8000 рублей</h2>
             </div>
             <div class="col-md-4 callback">
-                <a href="#" class="btn btn-primary">
+                <a href="#" id="callback_phone" type="button" class="btn btn-primary">
                   Обратный звонок
                 </a>
             </div>
             <div class="col-md-4">
               <p class="inform-wrapper_phone">
                 <i class="icon-phone"></i>
-                <span>+7 900-341-34-90</span>
+                <span>+7 900-333-05-41</span>
               </p>
               <small>
                   Звонок для физических и юридических лиц
@@ -69,9 +70,9 @@
       </div>
       <div class="hero-banner">
         <div class="hero-banner_content">
-            <h3>Звоните нам срочно!</h3>
-            <h1>Мы делаем все здорово</h1>
-            <h4>Наш номер: 8 800-345-23-12</h4>
+            <h1>Москва, Одинцово, Одинцовский район</h1>  
+            <h2>Наш номер: 8-900-333-05-41</h2>
+            <h3>Устранение засоров любой сложности!</h3>
         </div>
       </div>
       <div class="content">
@@ -79,38 +80,45 @@
         <div class="services">
           <div class="row">
             <div class="col-md-4">
-              <div class="organization-service" id="services">
-                <h2 class="service-title">Очистка твердых скоплений</h2>
-                <img src="img/directions/otk2.png" alt="">
-                <h2 class="price">8000 рублей.</h2>
-                <p class="desc">
+              <div class="organization-service" id="services" itemscope itemtype="http://schema.org/Product">
+                <h2 class="service-title" itemprop="name">Очистка твердых скоплений</h2>
+                <img src="img/directions/otk2.png" alt="" itemprop="image">
+                <div class="price" itemprop="offers" itemscope itemtype="http://schema.org/Offer">
+                  <span itemprop="price">10 000 рублей</span>
+                  <span itemprop="priceCurrency" class="hidden">RUB</span>
+                </div>
+                <p class="desc" itemprop="description">
                   Откачка твердых и жидких отходов. 
                   Мойки,септики, выгребные ямы, жироуловителей, мини-жироуловителей. 
                 </p>
               </div>
             </div>
             <div class="col-md-4">
-              <div class="organization-service">
-                <h2 class="service-title">Очистка твердых скоплений</h2>
-                <img src="img/directions/prom2.jpg" alt="">
-                <h2 class="price">
-                    от 10 000 руб.
-                </h2>
-                  <p class="desc">
-                      Промывка гидродинамикой труб. 
-                  </p>
+              <div class="organization-service" id="services" itemscope itemtype="http://schema.org/Product">
+                <h2 class="service-title" itemprop="name">Промывка гидродинамикой труб</h2>
+                <img src="img/directions/prom2.jpg" alt="" itemprop="image">
+                <div class="price" itemprop="offers" itemscope itemtype="http://schema.org/Offer">
+                  <span itemprop="price">8 000 рублей</span>
+                  <span itemprop="priceCurrency" class="hidden">RUB</span>
+                </div>
+                <p class="desc" itemprop="description">
+                    Промывка гидродинамикой труб. 
+                </p>
               </div>
             </div>
             <div class="col-md-4">
-              <div class="organization-service">
-                <h2 class="service-title">Видеодиагностика труб от 50 мм</h2>
-                <img src="img/directions/diag.jpg" alt="">
-                <h2 class="price">Цена договорная</h2>
-                <p>
-                    Видеодиагностика труб производится специальным оборудованием
-                    детескопом 
-                </p>
-              </div>
+                <div class="organization-service" id="services" itemscope itemtype="http://schema.org/Product">
+                  <h2 class="service-title" itemprop="name">Видеодиагностика труб от 50 мм</h2>
+                  <img src="img/directions/prom2.jpg" alt="" itemprop="image">
+                  <div class="price" itemprop="offers" itemscope itemtype="http://schema.org/Offer">
+                    <span itemprop="price">Цена договорная</span>
+                    <span itemprop="priceCurrency" class="hidden">RUB</span>
+                  </div>
+                  <p class="desc" itemprop="description">
+                      Видеодиагностика труб производится специальным оборудованием
+                    детескопом. 
+                  </p>
+                </div>
             </div>
           </div>
         </div>
@@ -120,24 +128,31 @@
         <h2>Контакты</h2>
         <div class="row">
           <div class="col-sm">
-            <div class="contacts-recvisits">
+            <div class="contacts-recvisits" itemscope itemtype="http://schema.org/Organization">
+              <span itemprop="name">Чистка канализации в Одинцово</span>
               <div class="phone-mail">
-                  <a href="tel:+79994442233">
-                    <span>
-                      +79994442233
-                    </span>
-                  </a>
-                  <br>
-                  <a href="mailto:mailto:chistka04@gmail.com">chistka04@gmail.com</a>
+                <a href="tel:+79003330541">
+                  Телефон: <span itemprop="telephone">+7-900-333-05-41</span>
+                </a>
+                <a href="mailto:mailto:chistka04@gmail.com">
+                  Электронная почта: <span itemprop="email">chistka04@gmail.com</span>
+                </a>
+                <a href="tel:+79003330541">
+                  Факс: <span itemprop="faxNumber">+7 495 739–70–70</span>
+                </a>
                 </div>
-                <div class="contacts-address">
-                    г. Москва, ул. Восточная, 10, Одинцово, Московская обл
+                <div class="contacts-address" itemprop="address" itemscope 
+                    itemtype="http://schema.org/PostalAddress">
+                    Адрес:
+                      <span itemprop="streetAddress">ул. Восточная, 10,</span>
+                      <span itemprop="postalCode">143006</span>
+                      <span itemprop="addressLocality">Москва, Одинцовский район</span>
                 </div>
             </div>
           </div>
           <div class="col-sm-7">
             <div class="contacts-form">
-              <form action="">
+              <form action="url" method="GET">
                 <input type="text" placeholder="Ваше имя">
                 <input type="text" placeholder="Ваш телефон">
                 <button class="btn btn-primary" type="submit">
@@ -178,7 +193,7 @@
           <div class="col-lg-4">
             <div class="footer-contacts">
               <p class="footer-contacts_phone">+7 900-341-34-90</p>
-              <p class="footer-contacts_address">г. Москва, Московская область</p>
+              <p class="footer-contacts_address">г. Москва, Московская область, Одинцово</p>
             </div>
           </div>
           <!-- /.col-md -->
@@ -186,7 +201,28 @@
       </div>
       <!-- /.container -->
     </footer>
-    
+    <div class="modal">
+      <div class="modal-content">
+        <div class="close">&times;</div>
+        <h4>Заполните поля</h4>
+        <p>Мы свяжемся с вами в ближайшее время</p>
+        <div class="modal-form">
+          <form method="POST" action="https://formfor.site/send/49x2EB2oKqxZHFOfbVYBSAb3AqRmBg">
+            <!-- <input type="text" placeholder="Ваше имя">
+            <input type="text" placeholder="Ваше телефон"> -->
+            <input type="text" name="email" placeholder="Ваша почта"/>
+            <input type="text" name="name" placeholder="Ваше телефон"/>
+            <button type="submit" class="btn btn-primary modal-form_btn">
+              Отправить заявку
+            </button>
+            <small>
+              Нажимая кнопку, даю согласие
+              на <a href="">обработку персональных данных</a>
+            </small>
+          </form>
+        </div>
+      </div>
+    </div>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
@@ -194,10 +230,25 @@
     <script src="slick/slick.js"></script>
     <script>
       $(document).ready(function() {
-        var menuBtn = $('.nav-btn');
-        var menu = $('.main-menu_nav');
-        var sidebarBtn = $('.left-sidebar_btn');
-        var sidebarMenu = $('.left-sidebar_menu');
+        let menuBtn = $('.nav-btn');
+        let menu = $('.main-menu_nav');
+        let sidebarBtn = $('.left-sidebar_btn');
+        let sidebarMenu = $('.left-sidebar_menu');
+        let close = $(".close");
+        let callbackPhone = $("#callback_phone");
+      
+        $("form button").on("click", function(event) {
+          // event.preventDefault();
+        });
+
+        callbackPhone.on("click", function(event) {
+          ($(".modal")).show();
+        });
+
+        close.on("click", function(event) {
+          event.preventDefault();
+          ($(".modal")).hide();
+        });
 
         menuBtn.on('click', function(event) {
           event.preventDefault();
@@ -211,7 +262,6 @@
 
         $(".main-menu_nav a").click(function() {
           
-          // console.log($("#" + $(this).data('value'))).offset().top;
           $("body, html").animate({
             scrollTop:$("#" + $(this).data('value')).offset().top - 10
           }, 600);

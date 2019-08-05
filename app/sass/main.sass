@@ -87,32 +87,33 @@ a
     transform: translate(-50%, -50%)
     text-align: center
     h3
-      font-size: 27px
-      margin-bottom: 0
+      font-size: 22px
     h1
-      margin-bottom: 12px
-    h4
-      font-size: 18px
+      margin-bottom: 22px
+    h2
+      font-size: 25px
 .desc
   text-align: center
+  font-size: 18px
+  font-weight: 600
 .callback
   vertical-align: middle
   margin: auto 0 auto 0
   text-align: center
-  .btn
-    padding: 20px 30px
-    display: block
-    text-decoration: none
-    color: $white
-    border-radius: 5px
-    font-size: 16px
-    font-weight: 700
-    &-primary
-      background-color: $active-color
-      border-bottom: 5px solid darken($active-color, 10%)
-      &:hover
-        background-color: lighten($active-color, 2%)
-        transition: all 0.3s 
+.btn
+  padding: 20px 30px
+  display: block
+  text-decoration: none
+  color: $white
+  border-radius: 5px
+  font-size: 16px
+  font-weight: 700
+  &-primary
+    background-color: $active-color
+    border-bottom: 5px solid darken($active-color, 10%)
+    &:hover
+      background-color: lighten($active-color, 2%)
+      transition: all 0.3s 
 .content
   text-align: center
   .header-services
@@ -126,7 +127,12 @@ a
       min-height: 32rem
       transition: all 0.25s
       .price
+        margin-top: 26px
         color: $price-color
+        font-size: 20px
+        font-weight: 600
+      .hidden
+        display: none
     img
       display: block
       margin: 0 auto
@@ -136,6 +142,11 @@ a
 .contacts
   position: relative
   background-color: $white
+  .phone-mail
+    a
+      display: block
+      margin: 15px 0
+      color: $dark
   h2
     text-align: center
     font-size: 30px
@@ -210,5 +221,57 @@ a
   font-weight: 700
   font-size: 20px
   color: $dark
+
+// Всплывающее окно
+.modal
+  display: none
+  background-color: rgba(0,0,0,0.4)
+  position: fixed
+  left: 0
+  top: 0
+  width: 100%
+  height: 100%
+  z-index: 9999
+  &-content
+    position: relative
+    background-color: $white
+    padding: 30px 50px
+    width: 100%
+    max-width: 370px
+    margin: 50px auto
+    text-align: center
+    box-shadow: 0 12px 24px rgba(0, 0, 1, 0.18)
+    .close
+      position: absolute
+      right: 15px
+      top: 15px
+      line-height: 1
+      font-size: 20px
+      opacity: 0.5
+      &:hover
+        cursor: pointer
+    h4
+      margin-top: 0px
+      font-size: 18px
+      color: $active-color
+    p
+      font-style: 12px
+      margin-top: 0
+    a
+      color: $dark
+  &-form
+    margin-top: 37px
+    input
+      display: block
+      width: 100%
+      border: 1px solid rgba($dark, 0.15)
+      border-radius: 4px
+      padding: 20px
+      font-size: 15px
+      margin-bottom: 10px
+    &_btn
+      width: 100%
+      display: block
+      margin-bottom: 20px
 
 @import "media"
